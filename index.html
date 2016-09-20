@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">		
+		<style>
+		/*head*/
+			*{ margin: 0; padding: 0; list-style: none;}
+			a{ text-decoration: none; color: black;}
+			.wrap{ width: 16rem; overflow: hidden;}
+			.head{ width: 16rem; height: 2.525rem; position: relative; text-align: center; background: linear-gradient(#fff,#ebebeb);}
+			.head a{ width: 3.25rem; height: 1.6rem; text-indent: -99999px; background: url(img/back.png) no-repeat; background-size: 100%; position: absolute; left: 0.5rem; top: 0.5rem;} 
+			.head img{ width: 9.4rem; height: 2.2rem; margin-top: 0.175rem;}
+			.banner{position: relative; left: 0; top: 0; width: 16rem; height: 7.45rem;}
+			.banner ul{ width: 80rem; overflow: hidden; -webkit-transform:translate3d(0px,0px,0px);}
+			.banner li{float: left;}
+			.banner img{width: 16rem; height: 6.675rem;}
+			.banner ol{ width: 2.5rem; overflow: hidden; position: absolute; left: 50%; margin-left: -1.25rem;}
+			.banner ol li{ width: 0.25rem; height: 0.25rem; border-radius: 50%; background: #a9a9a9; margin: 0.125rem; float: left;}
+			.banner ol li.active{background: #ff4300;}
+			.nav{width: 15rem; margin: 0 auto;}
+			.nav ul{width: 15.2rem; height: 9rem;}
+			.nav li{ width: 2rem; text-align: center; margin: 1rem 0.9rem 0 0.9rem; float: left;}
+			.nav li img{width: 2rem; height: 2rem;}
+			.nav li span{font-size: 0.6rem; color: #999;}
+			.hot{width: 15rem; margin: 0 auto;}
+			.hot header{ width:100%; height: 1.775rem;border-bottom: 0.1rem solid #dcdcdc; overflow: hidden; color: #333; margin-bottom: 0.5rem;}
+			.hot header h3{ height:0.75rem ; line-height: 0.75rem; padding-left: 0.45rem; border-left: 0.1rem solid #d51938; float: left; font-size: 0.65rem; margin-top: 0.5rem; }
+			.hot header span{float: right; line-height: 0.75rem; display: block; font-size: 0.65rem; margin-top: 0.5rem;}
+			.hot .list{overflow: hidden; width: 15rem;}
+			.hot .list li{margin-top: 1rem; overflow: hidden;}
+			.hot .list img{width: 6rem; height: 3rem; float: left;}
+			.hot .list_r{width: 7.4rem; height: 1.4rem ; float: left; background: #f4f4f4; padding: 0.8rem; overflow: hidden;}
+			.hot .price_l{ color: #999; font-size: 0.6rem; line-height: 1rem; float: left;}
+			.hot .price_l p:nth-child(2) span{font-size: 0.5rem; text-decoration: line-through;}
+			.hot .price_r{font-size: 0.65rem; color: #d51938; float: right; margin-top: 0.5rem;}
+			.hot .price_r a{font-size: 0.65rem; font-weight: bold; color: #ccc;}
+			.more{width: 15rem; height: 2rem; background: #f5f5f5; line-height: 2rem; text-align: center; font-size: 0.7rem; color: #666; margin:1rem auto;} 
+			.more a{float: right; font-size: 0.65rem; font-weight: bold; color: #ccc; margin-right: 1rem;}
+			.sp{ width: 15rem; margin: 1rem auto; overflow: hidden;}
+			.sp img{ width: 3.73rem; height: 8.8rem; float: left;}
+			.sp ul{width: 11.21rem; height: 8.75rem; border-left: 1px solid #ccc; border-top: 1px solid #ccc; float: right;}
+			.sp ul li{width: 3.68rem; height: 2.14rem; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; float: left; line-height: 2.14rem; text-align: center; font-size: 0.7rem; color: #999;}
+			.sp ul li.cur a{color: #d51942;}
+			.down{width: 15rem; margin: 1rem auto;}
+			.down ul{width: 15rem; overflow: hidden; border-left: 1px solid #ccc; border-top: 1px solid #ccc;}
+			.down ul li{ width: 5rem; height: 4rem; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; margin-left: -1px; float: left; background: url(img/apple.png) no-repeat center 0.8rem; font-size: 0.7rem; text-align: center; background-size: 1rem 1rem;}
+			.down ul li:nth-child(2){background: url(img/andiod.png) no-repeat center 0.8rem; background-size: 1rem 1rem;}
+			.down ul li:nth-child(3){background: url(img/suggest.png) no-repeat center 0.8rem; background-size: 1rem 1rem;}
+			.down li a span{ margin-top: 2.5rem; display: block;}
+			.go{width: 16rem; height: 2.2rem; background: #f8f8f8; overflow: hidden; line-height: 2.2rem; font-size: 0.65rem; font-weight: bold; }
+			.go a{ padding: 0 1rem;}
+			.go .back{ float: right; width:2rem; overflow: hidden;}
+			.go .back i{width: 0.5rem; height: 0.5rem; background: url(img/arr.png) no-repeat; display: block; float: right; margin-top: 1rem;}
+			.footer{width: 16rem; height: 7.5rem; background: eee; text-align: center; padding-top: 1rem;}
+			.footer a{line-height: 1.5rem; margin: 0.3rem; font-size: 0.7rem;}
+			.footer p{ margin: 0.3rem; font-size: 0.6rem; color: #333;}
+			.footer img{ width: 13.35rem; height: 4.725rem;}
+		</style>
+	<script>
+		;(function(win,doc){
+		var rem = 20/320*doc.documentElement.clientWidth;
+		doc.documentElement.style.fontSize = rem+'px';
+		addEventListener('resize',function(){
+			rem = 20/320*doc.documentElement.clientWidth;
+			doc.documentElement.style.fontSize = rem+'px';
+		},false);
+		})(window,document);
+		document.addEventListener('DOMContentLoaded',function(){
+			var oBanner = document.querySelector('.banner');
+			var oUl = oBanner.children[0];
+			var oOl = oBanner.children[1];
+			var aLi = oUl.children;
+			var aBtn = oOl.children;
+			
+			var iNow = 0; 		//当前是第几个
+			var x = 0;
+			oUl.addEventListener('touchstart',function(ev){
+				oUl.style.WebkitTransition = 'none';
+				var oTouch = ev.targetTouches[0];
+				var downX = oTouch.pageX;
+				var disX = downX-x;
+				function fnMove(ev){
+					var oTouch = ev.targetTouches[0];
+					
+					x = oTouch.pageX-disX;
+					oUl.style.WebkitTransform = 'translate3d('+x+'px,0px,0px)';
+				}
+				function fnEnd(ev){
+					var oTouch = ev.changedTouches[0];
+					document.removeEventListener('touchmove',fnMove,false);
+					document.removeEventListener('touchend',fnEnd,false);
+					
+					var upX = oTouch.pageX;
+					//判断是否改变
+					if(Math.abs(upX-downX)>=100){
+						//判断方向
+						if(upX<downX){
+							iNow++;
+							if(iNow==aLi.length){
+								iNow=aLi.length-1;
+							}
+						}else if(upX>downX){
+							iNow--;
+							if(iNow<0){
+								iNow = 0;
+							}
+						}
+					}
+					
+					
+					oUl.style.WebkitTransition = '.3s all ease';
+					
+					x = -iNow*aLi[0].offsetWidth;
+					oUl.style.WebkitTransform = 'translate3d('+x+'px,0px,0px)';
+					
+					function tranEnd(){
+						oUl.removeEventListener('transitionend',tranEnd,false);
+						oUl.style.WebkitTransition = 'none';
+					}
+					oUl.addEventListener('transitionend',tranEnd,false);
+					
+					for(var i=0;i<aBtn.length;i++){
+						aBtn[i].className = '';
+					}
+					aBtn[iNow].className = 'active';
+					
+					
+				}
+				document.addEventListener('touchmove',fnMove,false);
+				document.addEventListener('touchend',fnEnd,false);
+				ev.preventDefault();
+			},false);
+		},false)
+	</script>
+	</head>
+	<body>
+		<section class="wrap">
+			<section class="head">
+				<a href="index.html">返回</a>
+				<img src="img/logo.png" />
+			</section>
+			<section class="banner">
+				<ul>
+					<li><img src="img/banner.png"/></li>
+					<li><img src="img/banner.png"/></li>
+					<li><img src="img/banner.png"/></li>
+					<li><img src="img/banner.png"/></li>
+					<li><img src="img/banner.png"/></li>
+				</ul>
+				<ol>
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</section>
+			<section class="nav">
+				<ul>
+					<li>
+						<a href="javascript:;">
+							<img src="img/icon1.png" />
+							<span>商品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/icon2.png" />
+							<span>生活</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/icon3.png" />
+							<span>品牌</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/icon4.png" />
+							<span>聚宝盆</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/icon5.png" />
+							<span>聚名品</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/icon6.png" />
+							<span>聚家装</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/icon7.png" />
+							<span>聚透</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/icon8.png" />
+							<span>客户端</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="hot">
+				<header>
+					<h3>聚划算热卖排行</h3>
+					<span>TOP10</span>
+				</header>
+				<section class="list">
+					<ul>
+						<li>							
+							<img src="img/1.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>68423</span></p>
+									<p>2.3折 <span>￥288</span></p>
+								</div>
+								<p class="price_r">￥51<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+						<li>							
+							<img src="img/2.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>623423</span></p>
+									<p>2.7折 <span>￥311</span></p>
+								</div>
+								<p class="price_r">￥333<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+						<li>							
+							<img src="img/3.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>68433</span></p>
+									<p>2.7折 <span>￥2333</span></p>
+								</div>
+								<p class="price_r">￥121<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+						<li>							
+							<img src="img/4.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>681223</span></p>
+									<p>6折 <span>￥234</span></p>
+								</div>
+								<p class="price_r">￥777<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+						<li>							
+							<img src="img/5.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>68423</span></p>
+									<p>4.6折 <span>￥299</span></p>
+								</div>
+								<p class="price_r">￥888<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+						<li>							
+							<img src="img/6.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>68423</span></p>
+									<p>9.8折 <span>￥999</span></p>
+								</div>
+								<p class="price_r">￥443<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+						<li>							
+							<img src="img/7.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>68423</span></p>
+									<p>1.3折 <span>￥222</span></p>
+								</div>
+								<p class="price_r">￥564<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+						<li>							
+							<img src="img/8.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>68423</span></p>
+									<p>5.6折 <span>￥2232</span></p>
+								</div>
+								<p class="price_r">￥999<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+						<li>							
+							<img src="img/9.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>6842</span></p>
+									<p>5.3折 <span>￥222</span></p>
+								</div>
+								<p class="price_r">￥9009<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+						<li>							
+							<img src="img/10.png"/>
+							<div class="list_r">
+								<div class="price_l">
+									<p>已售<span>68423</span></p>
+									<p>3.5折 <span>￥211</span></p>
+								</div>
+								<p class="price_r">￥333<a href="javascript:;">＞</a></p>
+							</div>
+						</li>
+					</ul>
+				</section>			
+			</section>	
+			<section class="more">更多划算 逛起来！！</section>
+			<section class="sp">
+				<img src="img/ad1.png" />
+				<ul>
+					<li class="cur"><a href="javascript:;">服饰</a></li>
+					<li><a href="javascript:;">配饰</a></li>
+					<li><a href="javascript:;">美妆</a></li>
+					<li><a href="javascript:;">鞋包</a></li>
+					<li class="cur"><a href="javascript:;">食品</a></li>
+					<li><a href="javascript:;">家居</a></li>
+					<li><a href="javascript:;">运动</a></li>
+					<li><a href="javascript:;">电器</a></li>
+					<li class="cur"><a href="javascript:;">百货</a></li>
+					<li><a href="javascript:;">母婴</a></li>
+					<li><a href="javascript:;">数码</a></li>
+					<li class="cur"><a href="javascript:;">更多</a></li>
+				</ul>			
+			</section>
+			<section class="more">精彩商品  逛起来！！<a href="javascript:;">＞</a></section>	
+			<section class="sp">
+				<img src="img/ad2.png" />
+				<ul>
+					<li><a href="javascript:;">服饰</a></li>
+					<li class="cur"><a href="javascript:;">配饰</a></li>
+					<li><a href="javascript:;">美妆</a></li>
+					<li class="cur"><a href="javascript:;">鞋包</a></li>
+					<li><a href="javascript:;">食品</a></li>
+					<li><a href="javascript:;">家居</a></li>
+					<li><a href="javascript:;">运动</a></li>
+					<li><a href="javascript:;">电器</a></li>
+					<li class="cur"><a href="javascript:;">百货</a></li>
+					<li><a href="javascript:;">母婴</a></li>
+					<li class="cur"><a href="javascript:;">数码</a></li>
+					<li><a href="javascript:;">更多</a></li>
+				</ul>			
+			</section>
+			<section class="more">品质生活  逛起来！！<a href="javascript:;">＞</a></section>	
+			<section class="sp">
+				<img src="img/ad3.png" />
+				<ul>
+					<li class="cur"><a href="javascript:;">服饰</a></li>
+					<li><a href="javascript:;">配饰</a></li>
+					<li class="cur"><a href="javascript:;">美妆</a></li>
+					<li><a href="javascript:;">鞋包</a></li>
+					<li><a href="javascript:;">食品</a></li>
+					<li><a href="javascript:;">家居</a></li>
+					<li class="cur"><a href="javascript:;">运动</a></li>
+					<li><a href="javascript:;">电器</a></li>
+					<li><a href="javascript:;">百货</a></li>
+					<li class="cur"><a href="javascript:;">母婴</a></li>
+					<li><a href="javascript:;">数码</a></li>
+					<li><a href="javascript:;">更多</a></li>
+				</ul>			
+			</section>
+			<section class="more">品牌折扣  逛起来！！<a href="javascript:;">＞</a></section>	
+			<section class="down">
+				<ul>
+					<li>
+						<a href="javascript:;">
+							<span>ios客户端 </span>
+						</a>
+					</li>
+					<li><a href="javascript:;"><span>安卓客户端</span></a></li>
+					<li><a href="javascript:;"><span>意见反馈</span></a></li>
+				</ul>
+			</section>
+			<section class="go">
+				<a href="javascript:;" class="log">登录</a>
+				<a href="javascript:;" class="reg">注册</a>
+				<a href="javascript:;" class="back">TOP<i></i></a>
+			</section>
+			<section class="footer">
+				<div>
+					<a href="javascript">标准版</a>
+					<a href="javascript">电脑版</a>
+				</div>
+				<p>@2013 浙B2-20080224 服务中心</p>
+				<img src="img/end.png" />
+			</section>
+		</section>
+	</body>
+</html>
