@@ -1,0 +1,90 @@
+ .navbar-default {
+ 	margin-top: -60px;
+ 	border-bottom: 1px solid #efefef;
+ 	background: #fff;
+ }
+ 
+ .navbar-header .navbar-brand h1 {
+ 	background: url(../images/logo.png) no-repeat;
+ 	width: 356px;
+ 	height: 60px;
+ 	margin-top: 0px;
+ 	margin-left: 15px;
+ }
+ 
+ .navbar-default .navbar-nav>li>a {
+ 	color: #088ad0;
+ }
+.navbar-default .navbar-nav>li>a:hover{
+    color:#088ad0;
+ }
+.navbar-default .navbar-nav>li:hover{
+    border-bottom: 3px solid #088ad0;  
+}
+ .jumbotron {
+ 	margin-top: 60px;
+ 	background-size: cover;
+ }
+ 
+ .text-center h1 {
+ 	font-size: 42px;
+ 	padding: 15px 0 35px 0;
+ }
+ 
+ .tbsite-jumbotron {
+ 	margin-bottom: 50px;
+ 	height: auto;
+ 	background-position: center bottom;
+ 	background-repeat: no-repeat;
+ 	background-color: #666;
+ 	color: #FFF;
+ 	width: 100%;
+ 	background-image: url(../images/1-3.png);
+ }
+ 
+ .wrap-join h1 {
+ 	font-size: 20px;
+ 	color: #088ad0;
+ 	padding-bottom: 5px;
+ }
+ 
+ .wrap-join p {
+ 	padding: 5px 0;
+ }
+ 
+ .wrap-join p.cor {
+ 	color: #088ad0;
+ }
+ 
+ .detailed {
+ 	margin-top: 40px;
+ }
+ 
+ @media screen and (min-width:320px) and (max-width:767px) {
+ 	.navbar-header .navbar-brand h1 {
+ 		margin-left: 15px;
+ 		margin-top: 6px;
+ 		width: 66px !important;
+ 		height: 54px !important;
+ 		background: url(../images/logo1.png) no-repeat !important;
+ 	}
+ 	.navbar-default .navbar-nav>li>a {
+ 		color: #666;
+ 	}
+ 	.navbar-default .navbar-nav>li>a:hover {
+ 		border-bottom: 0px;
+ 	}
+   .navbar-default .navbar-nav>li:hover{
+        border-bottom: 1px solid #efefef !important;  
+    }
+ 	.wrap-join {
+ 		padding: 0 15px;
+ 	}
+ 	.tbsite-jumbotron {
+ 		background-position: 90% 50%;
+ 	}
+ }
+ 
+ .row-content {
+ 	background: #fff;
+ }

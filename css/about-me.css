@@ -1,0 +1,218 @@
+@font-face {
+	font-family: 'iconn';
+	src: url('../fonts/icomoon.eot?izpax1');
+	src: url('../fonts/icomoon.eot?izpax1#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?izpax1') format('truetype'), url('../fonts/icomoon.woff?izpax1') format('woff'), url('../fonts/icomoon.svg?izpax1#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.navbar-header .navbar-brand h1 {
+	background: url(../images/logo.png) no-repeat;
+	width: 356px;
+	height: 60px;
+	margin-top: 0px;
+	margin-left: 15px;
+}
+
+.navbar-default {
+	margin-top: -60px;
+	border-bottom: 1px solid #efefef;
+	background: #fff;
+}
+
+.navbar-default .navbar-collapse {
+	background: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #088ad0;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color:#088ad0;
+}
+.navbar-default .navbar-nav>li:hover {
+	color: #088ad0;
+	border-bottom:3px solid #088ad0;
+}
+
+.jumbotron {
+	margin-top: 60px;
+	background-size: cover;
+}
+
+.text-center h1 {
+	font-size: 42px;
+	padding: 15px 0 35px 0;
+}
+
+.tbsite-jumbotron {
+	margin-bottom: 50px;
+	height: auto;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-color: #666;
+	color: #FFF;
+	width: 100%;
+}
+
+.tab {
+	margin-top: 20px;
+}
+
+.tab h1 {
+	font-size: 20px;
+	color: #088ad0;
+}
+
+.tab .hd {
+	overflow: hidden;
+}
+
+.tab .hd li a {
+	text-decoration: none;
+}
+
+.tab .bd nav {
+	display: none;
+}
+
+.tab .bd nav.wrap-dynamic {
+	display: block;
+}
+
+.bd .box1 {
+	margin-top: 40px;
+}
+
+.box1 h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+	color: #088ad0;
+}
+
+.box1 h3>b {
+	font-family: "iconn";
+	font-weight: normal;
+}
+
+.wrap-aboutMe {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-family: "微软雅黑";
+}
+
+.wrap-aboutMe h3 {
+	font-size: 200%;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #088ad0;
+}
+
+.wrap-aboutMe p {
+	padding: 2px 0;
+	line-height: 25px;
+}
+
+.wrap-aboutMe span {
+	float: right;
+	padding-top: 20px;
+}
+
+thead tr th,
+td {
+	width: 220px;
+}
+
+.wrap-constitution h1 {
+	text-align: center;
+	font-size: 200%;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.wrap-constitution h3 {
+	font-size: 20px;
+	color: #088ad0;
+	padding: 20px 0px 10px 0px;
+}
+
+.wrap-constitution p {
+	line-height: 25px;
+}
+
+.wrap-constitution p>b {
+	font-weight: 600;
+	color: #333;
+}
+
+.wrap-constitution u {
+	text-decoration: none;
+	/*color: green;*/
+	font-weight: 500;
+}
+
+.wrap-constitution p.last {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	float: right;
+}
+
+.wrap-constitution ul {
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+	.tbsite-jumbotron {
+		background-position: 90% 50%;
+	}
+	.navbar-header .navbar-brand h1 {
+		margin-left: 15px;
+		margin-top: 6px;
+		width: 66px !important;
+		height: 54px !important;
+		background: url(../images/logo1.png) no-repeat !important;
+	}
+	.wrap-aboutMe {
+		padding: 0 15px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		color: #666;
+	}
+	.navbar-default .navbar-nav>li>a:hover {
+		border-bottom: 0px;
+	}
+	.navbar-default .navbar-nav>li:hover{
+	    border-bottom: 1px solid #efefef !important;  
+	}
+	.navbar-collapse {
+		position: relative;
+		background: #fff;
+	}
+	.navbar-header {
+		background: #fff;
+	}
+	.navbar-default {
+		margin-top: -60px;
+	}
+	.wrap-constitution {
+		padding: 0 15px;
+	}
+	.tbsite-jumbotron {
+		margin-bottom: 0px;
+	}
+	.box1 {
+		padding: 0 15px;
+	}
+}
+
+.content-wrap {
+	margin-top: 25px;
+}
+
+.row-content {
+	/*margin-top: 50px;*/
+	background: #fff;
+}

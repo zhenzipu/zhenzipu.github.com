@@ -1,0 +1,99 @@
+ .navbar-default {
+ 	margin-top: -60px;
+ 	border-bottom: 1px solid #efefef;
+ 	background: #fff;
+ }
+ 
+ .navbar-header .navbar-brand h1 {
+ 	background: url(../images/logo.png) no-repeat;
+ 	width: 356px;
+ 	height: 60px;
+ 	margin-top: 0px;
+ 	margin-left: 15px;
+ }
+ 
+ .navbar-default .navbar-nav>li>a {
+ 	color: #088ad0;
+ }
+.navbar-default .navbar-nav>li>a:hover{
+    color:#088ad0;
+}
+.navbar-default .navbar-nav>li:hover{
+    border-bottom: 3px solid #088ad0;  
+}
+ 
+ .jumbotron {
+ 	margin-top: 60px;
+ 	background-size: cover;
+ }
+ 
+ .table>thead>tr>td {
+ 	text-align: center;
+ 	width: 300px;
+ }
+ 
+ table {
+ 	margin-bottom: 0px !important;
+ }
+ 
+ .table>thead>tr>td.last {}
+ 
+ .table>thead>tr>td.cer {
+ 	height: 52px;
+ 	padding-top: 16.5px;
+ }
+ 
+ .sponsor-unit thead tr td img {
+ 	height: 35px;
+ }
+ 
+ .sponsor-unit p {
+ 	float: right;
+ 	padding-bottom: 5px;
+ }
+ 
+ .text-center h1 {
+ 	font-size: 42px;
+ 	padding: 15px 0 35px 0;
+ }
+ 
+ .tbsite-jumbotron {
+ 	margin-bottom: 50px;
+ 	height: auto;
+ 	background-position: center bottom;
+ 	background-repeat: no-repeat;
+ 	background-color: #666;
+ 	color: #FFF;
+ 	width: 100%;
+ 	background-image: url(../images/1-2.png);
+ }
+ 
+ .detailed {
+ 	margin-top: 40px;
+ }
+ 
+ @media screen and (min-width:320px) and (max-width:767px) {
+ 	.navbar-header .navbar-brand h1 {
+ 		margin-left: 15px;
+ 		margin-top: 6px;
+ 		width: 66px !important;
+ 		height: 54px !important;
+ 		background: url(../images/logo1.png) no-repeat !important;
+ 	}
+ 	.navbar-default .navbar-nav>li>a {
+ 		color: #666;
+ 	}
+ 	.navbar-default .navbar-nav>li>a:hover {
+ 		border-bottom: 0px;
+ 	}
+ 	.tbsite-jumbotron {
+ 		background-position: 90% 50%;
+ 	}
+    .navbar-default .navbar-nav>li:hover {
+        border-bottom: 1px solid #efefef; 
+    }
+ }
+ 
+ .row-content {
+ 	background: #fff;
+ }

@@ -1,0 +1,234 @@
+@font-face {
+	font-family: 'iconn';
+	src: url('../fonts/icomoon.eot?izpax1');
+	src: url('../fonts/icomoon.eot?izpax1#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?izpax1') format('truetype'), url('../fonts/icomoon.woff?izpax1') format('woff'), url('../fonts/icomoon.svg?izpax1#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body,
+html {
+	color: #666;
+	height: 100%;
+	font-family: "微软雅黑";
+}
+
+.navbar-header .navbar-brand {
+	padding: 0px;
+	height: 60px;
+}
+.nav>li {
+	position: relative;
+	display: block;
+	top: 1px;
+}
+.navbar-collapse>ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+	display: block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 57px;
+	height: 57px;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a.listbox {
+	padding: 0px;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	margin-bottom: 0px;
+	z-index: 444;
+	background: rgba(0, 0, 0, 0.0);
+	border: 0px solid rgba(0, 0, 0, 0.0);
+	border-radius: 0;
+}
+
+.navbar-header .navbar-brand h1 {
+	background: url(../images/logo2.png) no-repeat;
+	text-indent: -999em;
+	width: 356px;
+	height: 60px;
+	margin-top: 0px;
+	margin-left: 15px;
+}
+/*.navbar-nav>li.cur{
+    border-bottom: 3px solid #088ad0;
+}*/
+
+@media screen and (min-width:320px) and (max-width:992px) {
+	.navbar-header .navbar-brand {
+		padding: 0px;
+		height: 60px !important;
+	}
+	.navbar-header .navbar-brand h1 {
+		margin-left: 15px;
+		margin-top: 6px;
+		width: 66px !important;
+		height: 54px !important;
+		background: url(../images/logo1.png) no-repeat !important;
+		text-indent: -999em;
+	}
+	.navbar-nav>li {
+		border-top: 1px solid rgba(255, 255, 255, .1);
+		display: block;
+		text-align: left;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 700;
+		padding: 10px 20px;
+		font-size: 13px;
+		line-height: 1;
+		border-bottom: 1px solid #e7e7e7;
+	}
+	.navbar-default .navbar-nav>li>a {
+		display: block;
+		line-height: 18px !important;
+		height: 18px !important;
+		color: #666;
+		font-weight: normal;
+	}
+	.navbar-header {
+		position: relative;
+	}
+	.navbar-toggle {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		margin-top: -18px;
+		line-height: 8px;
+		cursor: pointer;
+		padding: 10px;
+	}
+	.navbar-default .navbar-nav>li>a:focus,
+	.navbar-default .navbar-nav>li>a:hover {
+		color: #ccc;
+		border-bottom: 0px solid #fff;
+	}
+}
+
+@media screen and (min-width:767px) and (max-width:992px) {
+		.navbar-nav>li {
+		border-top: 1px solid rgba(255, 255, 255, .1);
+		display: block;
+		padding: 0;
+		text-align: left;
+		padding: 20px 20px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 1;
+		border-bottom: none;
+	}
+	.navbar-default .navbar-nav>li>a {
+		display: block;
+		line-height: 18px !important;
+		height: 18px !important;
+		color: #fff;
+		font-weight: normal;
+	}
+}
+.detailed {
+	background: #000;
+}
+
+.content-wrap .nav_tail {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.content-wrap h1 {
+	font-size: 150%;
+	font-family: "微软雅黑";
+	font-weight: 300;
+	color: #fff;
+}
+
+.content-wrap .nav_tail>ul {
+	padding-top: 20px;
+}
+
+.content-wrap .nav_tail>ul>li {
+	position: relative;
+}
+
+.content-wrap .nav_tail>ul>li>p {
+	height: 30px;
+	line-height: 30px;
+	color: #666;
+	font-family: 'iconn';
+}
+
+.content-wrap .nav_tail .list-info {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	margin-left: 130px;
+}
+
+.content-wrap .nav_tail .list-info a {
+	color: #666;
+}
+
+.content-wrap .nav_tail>ul>li>a>img {
+	max-width: 20%;
+	height: auto;
+	border: 0;
+	padding-bottom: 15px;
+	vertical-align: middle;
+}
+
+.content-wrap .nav_tail .list-info i {
+	font-size: 12px;
+}
+
+
+/*尾部*/
+
+.foot-wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+.row-content {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+}
+
+.row-content p {
+	margin-bottom: 0;
+	line-height: 40px;
+}
+
+@media screen and (min-width:0px) and (max-width:750px) {
+	.row-content p {
+		padding: 0px 30px;
+	}
+	.row-content p {
+		line-height: 20px;
+	}
+}
+
+.goback {
+	height: 40px;
+	width: 40px;
+	display: none;
+	position: fixed;
+	bottom: 10%;
+	right: 0;
+	z-index: 9999;
+}
+
+.goback ul li {
+	padding-bottom: 5px;
+}
