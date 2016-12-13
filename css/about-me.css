@@ -13,10 +13,6 @@
 	margin-top: 0px;
 	margin-left: 15px;
 }
-/*改*/
-.navbar-nav>li:nth-child(1).cur{
-    border-bottom: 1px solid #fff;
-}
 .navbar-default {
 	margin-top: -60px;
 	border-bottom: 1px solid #efefef;
@@ -215,6 +211,18 @@ td {
 	}
 }
 
+@media screen and (min-width:767px) {
+	/*改*/
+	.navbar-nav>li:nth-child(1).cur{
+	    border-bottom: 1px solid #fff;
+	}
+}
+@media screen and (max-width:766px) {
+	/*改*/
+	.navbar-nav>li:nth-child(1).cur{
+	    border-bottom: 1px solid #efefef;
+	}
+}
 .content-wrap {
 	margin-top: 25px;
 }
