@@ -58,9 +58,9 @@ html {
 	margin-top: 0px;
 	margin-left: 15px;
 }
-/*.navbar-nav>li.cur{
+.navbar-nav>li.cur{
     border-bottom: 3px solid #088ad0;
-}*/
+}
 
 @media screen and (min-width:320px) and (max-width:992px) {
 	.navbar-header .navbar-brand {
@@ -204,7 +204,6 @@ html {
 	color: #666;
 	text-align: center;
 }
-
 .row-content p {
 	margin-bottom: 0;
 	line-height: 40px;
@@ -216,6 +215,11 @@ html {
 	}
 	.row-content p {
 		line-height: 20px;
+	}
+}
+@media screen and (min-width:680px) and (max-width:992px) {
+	.nav_tail .list-info{
+		padding-left: 30px;
 	}
 }
 

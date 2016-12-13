@@ -11,7 +11,10 @@
  	margin-top: 0px;
  	margin-left: 15px;
  }
- 
+ /*改*/
+.navbar-nav>li:nth-child(1).cur{
+    border-bottom: 1px solid #fff;
+}
  .navbar-default .navbar-nav>li>a {
  	color: #088ad0;
  }
