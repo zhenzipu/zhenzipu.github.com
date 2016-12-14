@@ -17,8 +17,18 @@
 }
 
 .carousel-content-1>h1 {
+	font-size: 44px !important;
+	font-family: "思源黑体";
+	font-weight: normal;
 	margin-top: 15px;
 	font-size: 200%;
+	margin-bottom: 15px;
+}
+.carousel-content-1>p {
+	font-size: 16px !important;
+	margin-top: 15px;
+	font-size: 200%;
+	margin-bottom: 15px;
 }
 .carousel-content-2>h1{
 	font-size:200%;
@@ -30,27 +40,31 @@
 	left: 50%;
 	width: 110px;
 	height: 50px;
+	font-size: 16px;
 	margin-left: -55px;
-	border: 2px solid #088ad0;
-	border-radius: 30px;
+	border: 2px solid #5ae05b;
+	border-radius: 5px;
 	cursor: pointer;
 	z-index: 88;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .carousel-inner .join-1:hover {
-	background: #088ad0;
+	background: #5ae05b;
 }
 
 .carousel-inner .join-1>a {
 	text-align: center;
 	line-height: 46px;
+	color: #5ae05b;
+	font-size: 18px;
 }
 
 .carousel-inner .join-1>p {
 	text-align: center;
+	font-size: 18px;
 	line-height: 46px;
-	color: #088ad0;
+	color: #5ae05b;
 }
 
 .carousel-inner .join-1>a:hover {
