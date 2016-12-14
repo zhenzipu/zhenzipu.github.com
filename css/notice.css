@@ -136,7 +136,7 @@
 @media screen and (min-width:767px) {
 	/*改*/
 	.navbar-nav>li:nth-child(1).cur{
-	    border-bottom: 1px solid #fff;
+    border-bottom: 3px solid #088ad0;
 	}
 }
  .detailed {
