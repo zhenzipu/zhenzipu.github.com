@@ -11,6 +11,9 @@
  	margin-top: 0px;
  	margin-left: 15px;
  }
+ .down{
+ 	float: right;
+ }
  .navbar-default .navbar-nav>li>a {
  	color: #088ad0;
  }
