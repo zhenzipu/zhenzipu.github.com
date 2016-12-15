@@ -17,10 +17,10 @@
 }
 
 .carousel-content-1>h1 {
-	font-size: 44px !important;
-	font-family: "思源黑体";
+	font-size: 48px !important;
+	font-family: "华文细黑";
 	font-weight: normal;
-	margin-top: 15px;
+	margin-top: -40px;
 	font-size: 200%;
 	margin-bottom: 15px;
 }
@@ -47,7 +47,7 @@
 	border-radius: 5px;
 	cursor: pointer;
 	z-index: 88;
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 .carousel-inner .join-1:hover {
@@ -71,7 +71,7 @@
 
 .carousel-inner .join-1>a:hover {
 	text-decoration: none;
-	color: #5ae05b;
+	color: #3ca5f6;
 }
 @media screen and (min-width:320px) and (max-width:767px) {
 	.navbar {
