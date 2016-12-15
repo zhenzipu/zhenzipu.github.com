@@ -21,7 +21,6 @@
 	font-family: "华文细黑";
 	font-weight: normal;
 	margin-top: -40px;
-	font-size: 200%;
 	margin-bottom: 15px;
 }
 .carousel-content-1>p {
@@ -95,7 +94,9 @@
 	    border-bottom: 1px solid #efefef !important;  
 	}
 	.carousel-content-1>h1 {
-		font-size: 130% !important;
+		margin-left: -27px;
+  	 	width: 320px;
+   		font-size: 182% !important;
 		/*margin-top: -10px;*/
 	}
 	.carousel-inner {
