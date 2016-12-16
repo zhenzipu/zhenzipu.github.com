@@ -77,11 +77,35 @@
  .wrap-join p.cor {
  	color: #088ad0;
  }
- 
+ .lists{
+ 	/*float: right;*/
+ 	margin: 30px;
+ }
+ .lists img{
+ 	width: 115px;
+ 	height: 65px;
+ }
+ .lists>div{
+ 	float: left;
+ 	margin: 15px;
+ 	text-align: center;
+ }
+ .lists>div a{
+ 	text-decoration: none;
+ 	color: rgb(102,102,102);
+ }
+ @media screen and (min-width:1200px){
+ 	.lists{
+ 		float: right;
+ 	}
+ } @media screen and (max-width:1200px){
+ 	.lists{
+ 		float: left;
+ 	}
+ }
  .detailed {
  	margin-top: 40px;
  }
- 
  @media screen and (min-width:320px) and (max-width:767px) {
  	.navbar-header .navbar-brand h1 {
  		margin-left: 15px;
