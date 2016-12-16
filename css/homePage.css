@@ -15,12 +15,8 @@
 	position: absolute;
 	top: 40%;
 }
-
 .carousel-content-1>h1 {
-	font-size: 48px !important;
-	font-family: "黑体";
-	font-weight: normal;
-	margin-top: -40px;
+	margin-top: -20px;
 	margin-bottom: 15px;
 }
 .carousel-content-1>p {
