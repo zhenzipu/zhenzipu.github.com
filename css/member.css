@@ -92,7 +92,32 @@
         border-bottom: 1px solid #efefef; 
     }
  }
- 
+ /*改*/
+ .lists{
+ 	float: right;
+ 	margin-top: 30px;
+ }
+ .lists h1{
+ 	padding-left: 15px;
+ }
+ .lists img{
+ 	width: 115px;
+ 	height: 65px;
+ }
+ .lists>div{
+ 	float: left;
+ 	margin: 15px;
+ 	text-align: center;
+ }
+ .lists>div a{
+ 	text-decoration: none;
+ 	color: rgb(102,102,102);
+ }
+ @media screen and (max-width:1000px){
+ 	.lists{
+ 		float: left;
+ 	}
+ }
 @media screen and (min-width:767px) {
 	/*改*/
 	.navbar-nav>li:nth-child(1).cur{

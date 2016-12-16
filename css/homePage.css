@@ -1,6 +1,22 @@
 .carousel-control {
 	position: static;
 }
+@font-face {font-family: 'webfont';
+  src: url('//at.alicdn.com/t/5ff76qd3gx5stt9.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/5ff76qd3gx5stt9.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/5ff76qd3gx5stt9.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/5ff76qd3gx5stt9.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/5ff76qd3gx5stt9.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
+}
+
+
+.web-fontss{
+    font-family:"webfont" !important;
+	font-size:50px;font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
 .navbar-default .navbar-nav>li:hover {
 	border-bottom: 3px solid #088ad0;
 }
@@ -63,11 +79,41 @@
 	line-height: 46px;
 	color: #fff;
 }
-
+/*改*/
+ .lists{
+ 	float: right;
+ 	margin-top: 30px;
+ }
+ .lists h1{
+ 	padding-left: 15px;
+ }
+ .lists img{
+ 	width: 115px;
+ 	height: 65px;
+ }
+ .lists>div{
+ 	float: left;
+ 	margin: 15px;
+ 	text-align: center;
+ }
+ .lists>div a{
+ 	text-decoration: none;
+ 	color: rgb(102,102,102);
+ }
+ @media screen and (max-width:1000px){
+ 	.lists{
+ 		float: left;
+ 	}
+ }
 .carousel-inner .join-1>a:hover {
 	text-decoration: none;
 	color: #3ca5f6;
 }
+@media screen and (min-width:768px) and (max-width:1140px) {
+	.web-fontss{
+		font-size: 40px !important;
+	}
+	}
 @media screen and (min-width:320px) and (max-width:767px) {
 	.navbar {
 		background: #fff;
@@ -90,9 +136,10 @@
 	    border-bottom: 1px solid #efefef !important;  
 	}
 	.carousel-content-1>h1 {
-		margin-left: -27px;
-  	 	width: 320px;
-   		font-size: 182% !important;
+		text-align: center;
+		/*margin-left: -27px;*/
+  	 	/*width: 335px;*/
+   		font-size: 175% !important;
 		/*margin-top: -10px;*/
 	}
 	.carousel-inner {
