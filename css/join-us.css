@@ -44,7 +44,7 @@
     border-bottom: 3px solid #088ad0;  
 }
  .jumbotron {
- 	margin-top: 60px;
+ 	margin-top: 40px;
  	background-size: cover;
  }
  
@@ -69,12 +69,13 @@
  	color: #088ad0;
  	padding-bottom: 5px;
  }
- 
  .wrap-join p {
+ 	text-indent: 2rem;
  	padding: 5px 0;
  }
  
  .wrap-join p.cor {
+ 	text-indent: 2rem;
  	color: #088ad0;
  }
  /*改*/
