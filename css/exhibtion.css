@@ -13,7 +13,32 @@
 	margin-top: 0px;
 	margin-left: 15px;
 }
-
+/*改*/
+ .lists{
+ 	float: right;
+ 	margin-top: 30px;
+ }
+ .lists h1{
+ 	padding-left: 15px;
+ }
+ .lists img{
+ 	width: 115px;
+ 	height: 65px;
+ }
+ .lists>div{
+ 	float: left;
+ 	margin: 15px;
+ 	text-align: center;
+ }
+ .lists>div a{
+ 	text-decoration: none;
+ 	color: rgb(102,102,102);
+ }
+ @media screen and (max-width:1000px){
+ 	.lists{
+ 		float: left;
+ 	}
+ }
 .navbar-default {
 	background: #fff;
 	border-bottom: 1px solid #efefef;
@@ -174,8 +199,23 @@
 	padding: 15px 0px 10px 0px;
 }
 
+.meeting-1 .c{
+	text-align: center;
+}
+.meeting-1 .c img{
+	height: 220px;
+	width: 220px;
+}
+
 .meeting-1 p {
+	text-indent: 2rem;
+	font-size: 16px;
+	line-height: 30px;
 	padding: 5px 0px;
+}
+.meeting-1 h2 {
+	line-height: 30px;
+	font-size: 16px;
 }
 
 .meeting-1 p.center-p {
