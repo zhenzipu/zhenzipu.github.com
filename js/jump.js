@@ -15,8 +15,8 @@ window.onload = function() {
 	var oA = aList[sign].children[0].innerHTML;
 	if(sign == 0) {
 		sign = aList.length;
-		var oB = aList[sign - 1].children[0].innerHTML;
 	}
+	var oB = aList[sign - 1].children[0].innerHTML;
 	$(".active-tab span").html(oA);
 	$(".previous-tab span").html(oB);
 }
