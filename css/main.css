@@ -107,3 +107,10 @@
 		color: #252525;
 	}
 	
+	
+	.tab-content{
+		padding: 20px;
+	}
+	.tab-content img{
+		margin-bottom: 20px;
+	}
