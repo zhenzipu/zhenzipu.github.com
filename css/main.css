@@ -10,9 +10,11 @@
 		margin-bottom: 0;
 		background: #dcdcdc;
 	}
-	.header{
+	
+	.header {
 		margin-top: 15px;
 	}
+	
 	.nav a {
 		color: #000000;
 		display: block;
@@ -22,27 +24,30 @@
 		font-family: "微软雅黑";
 	}
 	
-	.navbar-nav> li{
+	.navbar-nav> li {
 		padding: 0 19px;
 	}
-	.navbar-nav>li>a{
+	
+	.navbar-nav>li>a {
 		padding: 30px 15px;
 	}
-	.dropdown-menu>li>a{
+	
+	.dropdown-menu>li>a {
 		display: block;
 		text-align: center;
 	}
+	
 	.nav> li:hover .dropdown-menu {
 		display: block;
 		background: #e7e7e7;
 	}
-
 	/*footer*/
 	
 	.footer-left {
 		margin-top: 30px;
 		padding-bottom: 30px;
 	}
+	
 	.footer-left p {
 		font-size: 18px;
 		line-height: 40px;
@@ -107,10 +112,58 @@
 		color: #252525;
 	}
 	
-	
-	.tab-content{
+	.tab-content {
 		padding: 20px;
 	}
-	.tab-content img{
+	
+	.tab-content img {
 		margin-bottom: 20px;
+	}
+	
+	.state-list p {
+		l font-family: "微软雅黑";
+		ine-height: 30px;
+		font-size: 15px;
+	}
+	
+	.state-list h5 {
+		font-weight: bold;
+		font-size: 16px;
+	}
+	
+	.thumbnail {
+		margin-top: 20px;
+		border: none;
+	}
+	
+	.introduction .thumbnail img {
+		width: 50%;
+	}
+	
+	.introduction .last {
+		color: #666;
+		/*padding:0 136px;*/
+	}
+	
+	@media (max-width: 750px) {
+		.introduction .thumbnail img {
+			width: 50%;
+		}
+		.introduction .thumbnail .last {
+			padding: 0px;
+		}
+	}
+	
+	.thumbnail h4,
+	h3 {
+		text-align: center;
+		color: #666;
+	}
+	
+	.thumbnail p {
+		line-height: 25px;
+	}
+	
+	.thumbnail:hover {
+		text-decoration: none;
 	}
