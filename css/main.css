@@ -121,8 +121,8 @@
 	}
 	
 	.state-list p {
-		l font-family: "微软雅黑";
-		ine-height: 30px;
+		font-family: "微软雅黑";
+		line-height: 30px;
 		font-size: 15px;
 	}
 	
@@ -131,39 +131,3 @@
 		font-size: 16px;
 	}
 	
-	.thumbnail {
-		margin-top: 20px;
-		border: none;
-	}
-	
-	.introduction .thumbnail img {
-		width: 50%;
-	}
-	
-	.introduction .last {
-		color: #666;
-		/*padding:0 136px;*/
-	}
-	
-	@media (max-width: 750px) {
-		.introduction .thumbnail img {
-			width: 50%;
-		}
-		.introduction .thumbnail .last {
-			padding: 0px;
-		}
-	}
-	
-	.thumbnail h4,
-	h3 {
-		text-align: center;
-		color: #666;
-	}
-	
-	.thumbnail p {
-		line-height: 25px;
-	}
-	
-	.thumbnail:hover {
-		text-decoration: none;
-	}
