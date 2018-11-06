@@ -1,1 +1,1 @@
-zhenzipu.github.io
+zhenzipu.github.com
