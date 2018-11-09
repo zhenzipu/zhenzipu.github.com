@@ -11,6 +11,7 @@
     vertical
     :objData="aSearch" 
     :objDefault="objDefault"
+    :labelWidth="120"
     :bhidLable="false"
     btnName="试试"
     @handleFormSubmit="handleSearch"
@@ -25,6 +26,7 @@ bhidLable | 是否显示label |  Boolean | true
 vertical | 是否竖排 |  Boolean | false
 objDefault | 表单默认值 |  Object | {}
 btnName | 按钮文本 |  String | '提交'
+labelWidth | label宽度 |  Number | 100
 
 #### objData 
 > ==下拉框==
@@ -62,6 +64,7 @@ btnName | 按钮文本 |  String | '提交'
     value: 'radio',
     //defaultValue: '1',//默认value
     required: true,//是否必须项
+    clearable:true//是否可清除
     placeholder: '请选择',
     data: [
         {
@@ -231,6 +234,78 @@ edit: {
     key: 'key3',//必填
     option: []//可填：select必填时option下拉框数据
 }
+```
+
+
+5.组织结构树
+
+> ==columns增加属性==
+
+属性 | 说明 | 类型 | 默认值
+---|---|---|---
+objData | 组织结构数组 |  Array | []
+objDefaultKey | 默认key |  Object | 见下方
+
+```
+<tco-tree 
+    :objData="aTreeData" :objDefaultKey="objDefaultKey" @selectNode="selectNode">
+</tco-tree>
+```
+#### Table events
+
+事件名 | 说明 | 返回值
+---|---|---
+selectNode | 选中组织结构 | node包含节点所有信息
+
+```
+默认key
+
+{
+    id: 'id',
+    pId: 'pId',
+    path: 'path',
+    pPath: 'pPath',
+    name: 'name',
+    fullName: 'fullName',
+    level: 'level',
+    expend: false
+}
+
+
+aTreeData: [
+    {
+        deptFullname: '京东集团',
+        deptName: '京东集团',
+        deep: 0,
+        parentCode: '',
+        deptCode: '333'
+    },
+    {
+        deptFullname: '资产管理-资源池',
+        deptName: '资源池',
+        deep: 3,
+        parentCode: 'ttt',
+        deptCode: '222'
+    },
+    {
+        deptFullname: 'CCO体系',
+        deptName: 'CCO体系',
+        deep: 1,
+        parentCode: 'eeee',
+        deptCode: 'dddd'
+    },
+]
+
+objDefaultKey: {
+    id: 'deptCode',
+    pId: 'parentCode',
+    path: 'path',
+    pPath: 'pPath',
+    name: 'deptName',
+    fullName: 'deptFullname',
+    level: 'deep',
+    expend: null
+},
 ```
 
 
