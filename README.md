@@ -267,7 +267,7 @@ selectNode | 选中组织结构 | node包含节点所有信息
     name: 'name',
     fullName: 'fullName',
     level: 'level',
-    expend: false
+    expand: 'expand'
 }
 
 
@@ -277,7 +277,8 @@ aTreeData: [
         deptName: '京东集团',
         deep: 0,
         parentCode: '',
-        deptCode: '333'
+        deptCode: '333',
+        expand:true
     },
     {
         deptFullname: '资产管理-资源池',
